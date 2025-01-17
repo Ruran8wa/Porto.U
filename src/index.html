@@ -1,52 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Porto.U</title>
-    <link rel="stylesheet" href="output.css">
-    <link rel="stylesheet" href="font.css">
-</head>
-<body class="m-0 p-0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="font.css" />
+  </head>
+  <body class="m-0 p-0">
     <main>
-        <section class="hero h-[600px] w-full bg-[url('../assets/hero-bg-img.jpeg')] bg-cover bg-center flex flex-row">
-            <div class="hero-text w-[500px] h-[220px] bg-[#333333] text-white opacity-90 flex flex-col relative top-[264px] left-[340px] justify-center px-6">
-                <h1 class="text-3xl font-medium">There's a new "showcase" for U.Porto's Lifelong Learning!</h1>
-                <p class="text-sm mt-5">New portal facilitates the access to the University's wide range of training programmes in Lifelong Learning.</p>
-                <a href="#" class="mt-5 bg-[#A18A4D] w-[100px] text-center font-bold text-[#333333]">See More</a>
+      <section
+        class="hero h-[600px] w-full bg-[url('../assets/hero-bg-img.jpeg')] bg-cover bg-center flex flex-row"
+      >
+        <div
+          class="hero-text w-[500px] h-[220px] bg-[#333333] text-white opacity-90 flex flex-col relative top-[264px] left-[340px] justify-center px-6"
+        >
+          <h1 class="text-3xl font-medium">
+            There's a new "showcase" for U.Porto's Lifelong Learning!
+          </h1>
+          <p class="text-sm mt-5">
+            New portal facilitates the access to the University's wide range of
+            training programmes in Lifelong Learning.
+          </p>
+          <a
+            href="#"
+            class="mt-5 bg-[#A18A4D] w-[100px] text-center font-bold text-[#333333]"
+            >See More</a
+          >
+        </div>
+      </section>
+      <section class="study mx-80 mt-32">
+        <div class="upper flex flex-col gap-12">
+          <h1 class="text-5xl text-[#A18A4D]">Study</h1>
+          <div class="left flex gap-12">
+            <p class="text-3xl font-medium w-[1000px]">Your future is here!</p>
+            <p class="text-xl font-light text-[#212529]">
+              Gathering the most complete offer of training programmes in
+              Portugal, the 14 faculties of the U.Porto offer unique conditions
+              to those who want to build an academic path of excellence and
+              properly valued by the labour market.
+            </p>
+          </div>
+        </div>
+        <div
+          class="line mt-14 border-solid border-[1px] border-[#F2F2F2]"
+        ></div>
+        <div class="bottom mt-14">
+          <h2 class="text-4xl font-medium">
+            Which course are you looking for?
+          </h2>
+          <div class="flex mt-8 gap-10">
+            <div class="left flex flex-col w-2/3 gap-5">
+              <select
+                name=""
+                id=""
+                class="border-solid border-[2px] border-black bg-white h-14 p-3 text-xl font-normal"
+              >
+                <option value="">All</option>
+                <option value="">
+                  Bachelor's and Integrated Master’s Degrees
+                </option>
+                <option value="">Master’s Degrees</option>
+                <option value="">Doctorates</option>
+              </select>
+              <input
+                type="text"
+                name=""
+                placeholder="Please enter course keywords..."
+                class="border-solid border-[2px] border-black bg-white h-14 p-3 text-xl font-normal"
+              />
+              <button
+                class="border-none bg-[#A18A4D] text-white hover:bg-white hover:text-[#A18A4D] hover:border-solid hover:border-2 hover:border-[#A18A4D] h-14 outline-none text-2xl font-bold"
+              >
+                Search
+              </button>
             </div>
-        </section>
-        <section class="study mx-96 mt-32">
-            <div class="upper flex flex-col gap-12">
-                <h1 class="text-5xl text-[#A18A4D]">Study</h1>
-                <div class="left flex gap-14 ">
-                    <p class=" text-3xl font-semibold w-[1000px]">Your future is here!</p>
-                    <p class="text-xl font-extralight text-[#212529]">Gathering the most complete offer of training programmes in Portugal, the 14 faculties of the U.Porto offer unique conditions to those who want to build an academic path of excellence and properly valued by the labour market.</p>
-                </div>
+            <div class="right flex flex-col gap-3">
+              <h2 class="text-2xl font-normal">Courses from A to Z:</h2>
+              <ul
+                class="text-2xl font-light underline leading-[30px] flex flex-col gap-2"
+              >
+                <li>Bachelor's and Integrated Master’s Degrees</li>
+                <li>Master’s Degrees</li>
+                <li>Doctorates</li>
+              </ul>
             </div>
-            <div class="line mt-14 border-solid border-[1px] border-[#F2F2F2]"></div>
-            <div class="bottom mt-14">
-                <h2>Which course are you looking for?</h2>
+          </div>
+        </div>
+      </section>
+      <section class="news">
+        <div class="upper">
+            <h2>News</h2>
+            <div class="goto">
+                <p>All news</p>
+                <img src="../assets/next.svg" alt="">
+            </div>
+        </div>
+        <div class="middle">
+            <div class="one">
                 <div>
-                    <div class="left">
-                        <form action="">
-                            <select name="" id="">
-                                <option value="">All</option>
-                                <option value="">Bachelor's and Integrated Master’s Degrees</option>
-                                <option value="">Master’s Degrees</option>
-                                <option value="">Doctorates</option>
-                            </select>
-                            <label for=""></label>
-                            <input type="text" name="" placeholder="">
-                            <button>Search</button>
-                        </form>
-                    </div>
-                    <div class="right">
-                        <h2>Courses from A to Z:</h2>
-                    </div>
+                    <p>Campus e Comunidade</p>
+                    <p>José Manuel Varejão é o novo Pró-Reitor para a Comunicação e Alumni</p>
+                </div>
+                <div>
+                    <p>10 January 2025</p>
+                    <img src="../assets/jose-varejao-pro-reitor-uporto.jpeg" alt="">
                 </div>
             </div>
-        </section>
+            <div class="one">
+                <div>
+                    <p>Campus e Comunidade</p>
+                    <p>José Manuel Varejão é o novo Pró-Reitor para a Comunicação e Alumni</p>
+                </div>
+                <div>
+                    <p>10 January 2025</p>
+                    <img src="../assets/jose-varejao-pro-reitor-uporto.jpeg" alt="">
+                </div>
+            </div>
+            <div class="one">
+                <div>
+                    <p>Campus e Comunidade</p>
+                    <p>José Manuel Varejão é o novo Pró-Reitor para a Comunicação e Alumni</p>
+                </div>
+                <div>
+                    <p>10 January 2025</p>
+                    <img src="../assets/jose-varejao-pro-reitor-uporto.jpeg" alt="">
+                </div>
+            </div>
+            
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>
